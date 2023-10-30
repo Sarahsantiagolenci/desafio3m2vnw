@@ -6,32 +6,78 @@ import styled from "styled-components";
     align-items: center;
     justify-content: space-between;
     width: 43vw;
-    height: 6vh;
+    height: 8vh;
     font-size: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #808080;
-    color: #ffffff;
+    background-color: #40E0D0;
+    color: #FF007F;
 `;
 
 export const FirstPart = styled.button`
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 15vw;
+`;
+
+export const SecondPart = styled.button`
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+`;
+
+export const ThirdPart = styled.button`
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+`;
+
+export const FourthPart = styled.button`
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+`;
+
+export const FifthPart = styled.button`
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+`;
+
+export const SixthPart = styled.button`
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+    text-align: center;
 `;
 
 export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 25vw;
     height: 65vh;
     margin-left: 520px;
-    background-color: #000000;
+    background-color:#000000;
+@media(max-width: 500px) {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
 `;
 
 export const Box = styled.div`
     display: flex;
-    border: solid purple;
-    width: 50px;
-    height: 150px;
-    color: green;
+    justify-content: center;
+    align-items: center;
+    margin-left: 540px;
+    width: 250px;
+    height: 50px;
+    color: #000000;
+@media(max-width: 500px) {
+    display: flex;
+    justify-content: flex-start;
+}
 `;

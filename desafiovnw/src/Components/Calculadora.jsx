@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Box, Botao } from "./Style.jsx";
+import { Container, Box, Botao, FirstPart, SecondPart, ThirdPart, FourthPart, FifthPart, SixthPart } from "./Style.jsx";
 
 export default function Calculator() {
 
@@ -44,30 +44,44 @@ export default function Calculator() {
         <div>
             <Box>
             <h1>{number}</h1>
-            <h2>{oldNumber}</h2>
             </Box>
-            <Container>
-                <FirstPart>
+    <Container>
+        <FirstPart>
          <Botao onClick={InputNumber} value={"1"}>1</Botao>
          <Botao onClick={InputNumber} value={"2"}>2</Botao>
          <Botao onClick={InputNumber} value={"3"}>3</Botao>
-         </FirstPart>
+        </FirstPart>
+
+        <SecondPart>
          <Botao onClick={InputNumber} value={"4"}>4</Botao>
          <Botao onClick={InputNumber} value={"5"}>5</Botao>
          <Botao onClick={InputNumber} value={"6"}>6</Botao>
-         
+        </SecondPart>
+
+        <ThirdPart>
          <Botao onClick={InputNumber} value={"7"}>7</Botao>
          <Botao onClick={InputNumber} value={"8"}>8</Botao>
          <Botao onClick={InputNumber} value={"9"}>9</Botao>
+        </ThirdPart>
+
+        <FourthPart>
          <Botao onClick={InputNumber} value={"0"}>0</Botao>
          <Botao onClick={Clean}>AC</Botao>
          <Botao onClick={InputNumber} value={"."}>,</Botao>
+        </FourthPart>
+
+        <FifthPart>
          <Botao onClick={OperatorChange} value={"+"}>+</Botao>
          <Botao onClick={OperatorChange} value={"-"}>-</Botao>
          <Botao onClick={OperatorChange} value={"/"}>/</Botao>
+        </FifthPart>
+
+        <SixthPart>
          <Botao onClick={OperatorChange} value={"*"}>*</Botao>
          <Botao onClick={Calculate} value={"="}>=</Botao>
-         </Container>
+        </SixthPart>
+
+    </Container>
     </div>
     )
 }
